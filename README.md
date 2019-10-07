@@ -8,7 +8,8 @@
  <br>
 
 
- ![alt text](https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png)
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="500" height="500">
+
 
   ![alt text](https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png)
 
