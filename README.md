@@ -3,41 +3,28 @@
  Use ModelArts for AI process which is a service from Huawei Cloud. <br>
  I worked on this project at Myanmar National Cloud and AI Contest 2019.
  
- <style>
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
 
  <br>
  <br>
  <a href="https://play.google.com/store/apps/details?id=com.minthurazaw.diseasedetector&hl=en">https://play.google.com/store/apps/details?id=com.minthurazaw.diseasedetector&hl=en</a>
  <br>
+  <br>
 
- <div class="row">
-  <div class="column">
- <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="320" height="480" style="width:100%">  </div>
-  <div class="column">
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="320" height="480" style="width:100%">
 
- <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png"  width="320" height="480" style="width:100%">  
-</div>
+  <br>
+ <br>
  
-</div>
 
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png"  width="320" height="480" style="width:100%"> 
 
+  <br>
+ <br>
 
+  <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-08-22-20-22-58-323_com.example.diseasedetector%5B1%5D.png"  width="320" height="480" style="width:100%"> 
 
+  <br>
+ <br>
 
-
-  ![alt text](https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-08-22-20-22-58-323_com.example.diseasedetector%5B1%5D.png)
-
-  ![alt text](https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-03-20-03-47-256_com.minthurazaw.diseasedetector.png)
+   <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-03-20-03-47-256_com.minthurazaw.diseasedetector.png"  width="320" height="480" style="width:100%"> 
+ 
