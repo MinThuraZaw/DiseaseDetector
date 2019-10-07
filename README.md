@@ -8,10 +8,12 @@
  <br>
 
 
- <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="500" height="500">
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="320" height="480">
+
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png"  width="320" height="480">
 
 
-  ![alt text](https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png)
+  ![alt text]()
 
   ![alt text](https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-08-22-20-22-58-323_com.example.diseasedetector%5B1%5D.png)
 
