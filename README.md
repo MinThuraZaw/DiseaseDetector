@@ -1,9 +1,10 @@
 # DiseaseDetector
- Diseases prediction app.
- Use ModelArts for AI process which is a service from Huawei Cloud.
+ Diseases prediction app.<br>
+ Use ModelArts for AI process which is a service from Huawei Cloud. <br>
  I worked on this project at Myanmar National Cloud and AI Contest 2019.
  <br>
- <a href="https://play.google.com/store/apps/details?id=com.minthurazaw.diseasedetector&hl=en">Google PlayStore link</a>
+ <br>
+ <a href="https://play.google.com/store/apps/details?id=com.minthurazaw.diseasedetector&hl=en">https://play.google.com/store/apps/details?id=com.minthurazaw.diseasedetector&hl=en</a>
  <br>
 
 
