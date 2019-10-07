@@ -7,10 +7,19 @@
  <a href="https://play.google.com/store/apps/details?id=com.minthurazaw.diseasedetector&hl=en">https://play.google.com/store/apps/details?id=com.minthurazaw.diseasedetector&hl=en</a>
  <br>
 
+ <div class="row">
+  <div class="column">
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="320" height="480">  </div>
+  <div class="column">
 
- <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="320" height="480">
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png"  width="320" height="480">  
+</div>
+ 
+</div>
 
- <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png"  width="320" height="480">
+
+
+
 
 
   ![alt text]()
