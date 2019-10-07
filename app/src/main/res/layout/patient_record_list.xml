@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/patient_cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:background="@android:color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/expand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:text="Name : "/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_patient_name"
+            android:text="1ererererererererererere"
+            android:textSize="20sp"
+            android:maxLines="3"
+            android:layout_toRightOf="@id/txt_patient_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_patient_type"
+            android:layout_below="@id/txt_patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:text="Disease Type : "/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_patient_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_patient_name"
+            android:layout_toRightOf="@id/txt_patient_type"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="ererererererererererere"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_patient_datetime"
+            android:layout_below="@id/txt_patient_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:text="DateTime : "/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_patient_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_patient_type"
+            android:layout_toRightOf="@id/txt_patient_datetime"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:text="ererererererererererere"
+            />
+
+        <!--<androidx.appcompat.widget.AppCompatTextView-->
+            <!--android:id="@+id/txt_attr"-->
+            <!--android:layout_below="@id/txt_datetime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:text="Attributes : "/>-->
+
+        <!--<androidx.appcompat.widget.AppCompatTextView-->
+            <!--android:id="@+id/tv_attribute"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_date"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="....."-->
+            <!--android:layout_toRightOf="@id/txt_attr"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--/>-->
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

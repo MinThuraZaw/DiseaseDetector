@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diseasedetector.activities.PatientRecordDetailActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_patient_record"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:title="Patient Record Detail"
+        app:popupTheme="@style/PopupTheme"
+        android:theme="@style/ToolbarTheme"/>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar_patient_record"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="24sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/patient_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aung Aung"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/txt_detail_name"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_detail_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age : "
+        android:textColor="@android:color/black"
+        android:layout_below="@id/patient_detail_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="24sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/patient_detail_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/patient_detail_name"
+        android:layout_toRightOf="@id/txt_detail_age"
+        android:textSize="24sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_detail_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender : "
+        android:textColor="@android:color/black"
+        android:layout_below="@id/patient_detail_age"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="24sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/patient_detail_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/patient_detail_age"
+        android:layout_toRightOf="@id/txt_detail_gender"
+        android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_detail_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight : "
+            android:textColor="@android:color/black"
+            android:layout_below="@id/patient_detail_gender"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_detail_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/patient_detail_gender"
+            android:layout_toRightOf="@id/txt_detail_weight"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_detail_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height : "
+            android:textColor="@android:color/black"
+            android:layout_below="@id/patient_detail_weight"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_detail_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/patient_detail_weight"
+            android:layout_toRightOf="@id/txt_detail_height"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_detail_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Type : "
+            android:textColor="@android:color/black"
+            android:layout_below="@id/patient_detail_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_detail_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/patient_detail_height"
+            android:layout_toRightOf="@id/txt_detail_blood"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_detail_happen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disease Type : "
+            android:textColor="@android:color/black"
+            android:layout_below="@id/patient_detail_blood"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_detail_happen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Attack"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/patient_detail_blood"
+            android:layout_toRightOf="@id/txt_detail_happen"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:textColor="@android:color/black"
+            android:layout_below="@id/patient_detail_happen"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12121"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/patient_detail_happen"
+            android:layout_toRightOf="@id/txt_detail_date"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

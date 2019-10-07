@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:context=".fragments.AboutFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_doc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/doctor"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disease Detector"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/img_doc"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Version 1.0)"
+        android:textColor="#99000000"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/txt_name"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/aboutapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disease Detector, Healthcare AI app in which you can check up some common diseases by patient's attribute information and it will tell you the result YES or  NO. Then it also provides that patient's information records and check up record lists can be stored and easily found by date and time. Then you can read daily updated news about health."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/version"
+        />
+
+    <View
+        android:id="@+id/line_one"
+        android:layout_below="@id/aboutapp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp">
+
+    </View>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/developed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by :"
+        android:textColor="#99000000"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line_one"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UCSY-Virus"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/developed"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View
+        android:id="@+id/line_two"
+        android:layout_below="@id/txt_team"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp">
+
+    </View>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/acknowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acknowledgements :"
+        android:textColor="#99000000"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line_two"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ack_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Icon Credit : Flaticon"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/acknowledge"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ack_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Image Credit : Tchol cliparts"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/ack_one"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ack_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Disease attributes : https://www.kaggle.com"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/ack_two"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ack_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Loading animation : SpinKit"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/ack_three"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ack_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- News sources : https://newsapi.org"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/ack_four"
+        />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:layout_marginBottom="20dp"
+        android:focusableInTouchMode="true"
+        tools:context=".activities.HypertensiveActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_hyper"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:title="Detect Hypertensive"
+            app:popupTheme="@style/PopupTheme"
+            android:theme="@style/ToolbarTheme"/>
+
+        <RelativeLayout
+            android:layout_below="@id/toolbar_hyper"
+            android:id="@+id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_hyper_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Gender"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hyper_gender_spinner"
+                android:layout_below="@id/tv_hyper_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_two"
+            android:layout_below="@id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_hyper_agerange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Age Range"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hyper_age_spinner"
+                android:layout_below="@id/tv_hyper_agerange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_three"
+            android:layout_below="@id/layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_hyper_race"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="RACE"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hyper_race_spinner"
+                android:layout_below="@id/tv_hyper_race"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_four"
+            android:layout_below="@id/layout_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_hyper_bmirange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="BMI Range"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hyper_bmirange_spinner"
+                android:layout_below="@id/tv_hyper_bmirange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_five"
+            android:layout_below="@id/layout_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_hyper_kidneyproblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Kidney problems history"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hyper_kidneyproblem_spinner"
+                android:layout_below="@id/tv_hyper_kidneyproblem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_six"
+            android:layout_below="@id/layout_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_hyper_smoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Smoking cigarette history"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hyper_smoking_spinner"
+                android:layout_below="@id/tv_hyper_smoking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_seven"
+            android:layout_below="@id/layout_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_hyper_diabete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Diabetes problems history"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hyper_diabete_spinner"
+                android:layout_below="@id/tv_hyper_diabete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@id/layout_seven"
+            android:id="@+id/btn_hyper_checkup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:text="Check Up"
+            android:textColor="@android:color/white"
+            android:background="@drawable/check_round_btn"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
+

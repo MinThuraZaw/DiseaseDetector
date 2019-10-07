@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:layout_marginBottom="20dp"
+        android:focusableInTouchMode="true"
+        tools:context=".activities.DiabetesActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_kidney"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:title="Detect Chronic Kidney"
+            app:popupTheme="@style/PopupTheme"
+            android:theme="@style/ToolbarTheme"/>
+
+        <RelativeLayout
+            android:layout_below="@id/toolbar_kidney"
+            android:id="@+id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Age \n(Age in number)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_age"
+                android:layout_below="@id/tv_kidney_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_two"
+            android:layout_below="@id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="BP\n(Blood pressure)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_bp"
+                android:layout_below="@id/tv_kidney_bp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_three"
+            android:layout_below="@id/layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_sg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Sg\n (Specific gravity)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_sg"
+                android:layout_below="@id/tv_kidney_sg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_four"
+            android:layout_below="@id/layout_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_al"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="AL\n (Alnumin)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_al"
+                android:layout_below="@id/tv_kidney_al"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_five"
+            android:layout_below="@id/layout_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_su"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Su\n(Suger)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_su"
+                android:layout_below="@id/tv_kidney_su"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_six"
+            android:layout_below="@id/layout_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_rbc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="RBC \n(Red blood cell)"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_rbc_spinner"
+                android:layout_below="@id/tv_kidney_rbc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_seven"
+            android:layout_below="@id/layout_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_pc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Pc\n(Pus cell)"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_pc_spinner"
+                android:layout_below="@id/tv_kidney_pc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_eight"
+            android:layout_below="@id/layout_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_pcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Pcc\n(Pus cell clumps)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_pcc_spinner"
+                android:layout_below="@id/tv_kidney_pcc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_nine"
+            android:layout_below="@id/layout_eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_ba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Ba\n(Bacteria)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_ba_spinner"
+                android:layout_below="@id/tv_kidney_ba"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_ten"
+            android:layout_below="@id/layout_nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_bgr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Bgr\n(Blood glucose random)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_bgr"
+                android:layout_below="@id/tv_kidney_bgr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_eleven"
+            android:layout_below="@id/layout_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Bu\n(Blood urea)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_bu"
+                android:layout_below="@id/tv_kidney_bu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_twelve"
+            android:layout_below="@id/layout_eleven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Sc\n(serum creatinine )"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_sc"
+                android:layout_below="@id/tv_kidney_sc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_thirteen"
+            android:layout_below="@id/layout_twelve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_sod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Sod\n(Sodium)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_sod"
+                android:layout_below="@id/tv_kidney_sod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_fourteen"
+            android:layout_below="@id/layout_thirteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_pot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Pot\n(Potassium)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_pot"
+                android:layout_below="@id/tv_kidney_pot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_fifteen"
+            android:layout_below="@id/layout_fourteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_hemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Hemo\n(hemoglobin)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_hemo"
+                android:layout_below="@id/tv_kidney_hemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_sixteen"
+            android:layout_below="@id/layout_fifteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_pcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Pcv\n(packed cell volume)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_pcv"
+                android:layout_below="@id/tv_kidney_pcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_seventeen"
+            android:layout_below="@id/layout_sixteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_wc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Wc\n(white blood cell count)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_wc"
+                android:layout_below="@id/tv_kidney_wc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_eighteen"
+            android:layout_below="@id/layout_seventeen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_rc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Rc\n(Red blood cell count)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_kidney_rc"
+                android:layout_below="@id/tv_kidney_rc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_nineteen"
+            android:layout_below="@id/layout_eighteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_htn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Htn\n(hypertension)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_htn_spinner"
+                android:layout_below="@id/tv_kidney_htn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_twenty"
+            android:layout_below="@id/layout_nineteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Dm\n(diabetes mellitus)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_dm_spinner"
+                android:layout_below="@id/tv_kidney_dm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_twentyone"
+            android:layout_below="@id/layout_twenty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_cad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Cad\n(coronary artery disease )"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_cad_spinner"
+                android:layout_below="@id/tv_kidney_cad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_twentytwo"
+            android:layout_below="@id/layout_twentyone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_appet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Appet\n(appetite)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_appet_spinner"
+                android:layout_below="@id/tv_kidney_appet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_twentythree"
+            android:layout_below="@id/layout_twentytwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_pe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Pe\n(pedal edema )"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_pe_spinner"
+                android:layout_below="@id/tv_kidney_pe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_last"
+            android:layout_below="@id/layout_twentythree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_kidney_ane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Ane\n(anemia)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/kidney_ane_spinner"
+                android:layout_below="@id/tv_kidney_ane"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@id/layout_last"
+            android:id="@+id/btn_kidney_checkup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:text="Check Up"
+            android:textColor="@android:color/white"
+            android:background="@drawable/check_round_btn"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
+

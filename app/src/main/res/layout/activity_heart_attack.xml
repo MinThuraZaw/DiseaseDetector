@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:layout_marginBottom="20dp"
+        android:focusableInTouchMode="true"
+        tools:context=".activities.HeartAttackActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_ha"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:title="Detect Heart Attack"
+            app:popupTheme="@style/PopupTheme"
+            android:theme="@style/ToolbarTheme"/>
+
+        <RelativeLayout
+            android:layout_below="@id/toolbar_ha"
+            android:id="@+id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Age\n(Age in number)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_age"
+                android:layout_below="@id/tv_ha_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_two"
+            android:layout_below="@id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Gender"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ha_sex_spinner"
+                android:layout_below="@id/tv_ha_sex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_three"
+            android:layout_below="@id/layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_chestpain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Chest Pain"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ha_chestpain_spinner"
+                android:layout_below="@id/tv_ha_chestpain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_four"
+            android:layout_below="@id/layout_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_trestbps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Trestbps\nResting blood pressure \n(in mm Hg on admission to the hospital)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_trestbps"
+                android:layout_below="@id/tv_ha_trestbps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_five"
+            android:layout_below="@id/layout_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_chol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Chol\n(Serum cholestoral in mg/dl)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_chol"
+                android:layout_below="@id/tv_ha_chol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_six"
+            android:layout_below="@id/layout_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_fbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Fbs\n(fasting blood sugar > 120 mg/dl)"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ha_fbs_spinner"
+                android:layout_below="@id/tv_ha_fbs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_seven"
+            android:layout_below="@id/layout_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_restecg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Restecg\nresting electrocardiographic results \n0 = normal \n1 = having ST-T wave abnormality (T wave inversions \nand/or ST elevation or depression of > 0.05 mV)\n2 = showing probable or definite left ventricular hypertrophy by Estes' criteria"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_restecg"
+                android:layout_below="@id/tv_ha_restecg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_eight"
+            android:layout_below="@id/layout_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_thalach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Thalach\n(maximum heart rate achieved)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_thalach"
+                android:layout_below="@id/tv_ha_thalach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_nine"
+            android:layout_below="@id/layout_eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_exang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Exang\nexercise induced angina?"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ha_exang_spinner"
+                android:layout_below="@id/tv_ha_exang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_ten"
+            android:layout_below="@id/layout_nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_oldpeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Oldpeak\n(ST depression induced by exercise relative to rest)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_oldpeak"
+                android:layout_below="@id/tv_ha_oldpeak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_eleven"
+            android:layout_below="@id/layout_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_slope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Slope\n(the slope of the peak exercise ST segment\n1 = upsloping, 2 = flat, 3 = downsloping)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_slope"
+                android:layout_below="@id/tv_ha_slope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_twelve"
+            android:layout_below="@id/layout_eleven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Ca\n(number of major vessels (0-3) colored by flourosopy)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_ca"
+                android:layout_below="@id/tv_ha_ca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_last"
+            android:layout_below="@id/layout_twelve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/disease_type_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ha_thal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Thal\n(3 = normal; 6 = fixed defect; 7 = reversable defect)"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ha_thal"
+                android:layout_below="@id/tv_ha_thal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@id/layout_last"
+            android:id="@+id/btn_ha_checkup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:text="Check Up"
+            android:textColor="@android:color/white"
+            android:background="@drawable/check_round_btn"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
+

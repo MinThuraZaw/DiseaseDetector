@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+<RelativeLayout
+    android:id="@+id/record_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_checkup_detail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/PopupTheme"
+        app:title="Check Up Detail"
+        app:titleTextColor="@android:color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_txttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_checkup_detail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Type : "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_checkup_detail"
+        android:layout_toRightOf="@id/detail_txttype"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="gwp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_txtresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_txttype"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Result : "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_type"
+        android:layout_toRightOf="@id/detail_txtresult"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="gwp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_txtdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_txtresult"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="DateTime : "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_result"
+        android:layout_toRightOf="@id/detail_txtdate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="gwp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_txtattr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_txtdate"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Attributes : "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_attr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_txtattr"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="gwp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+</ScrollView>
