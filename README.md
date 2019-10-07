@@ -9,20 +9,16 @@
 
  <div class="row">
   <div class="column">
- <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="320" height="480">  </div>
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-00-08-729_com.minthurazaw.diseasedetector.png"  width="320" height="480" style="width:100%">  </div>
   <div class="column">
 
- <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png"  width="320" height="480">  
+ <img src="https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-09-04-20-33-05-928_com.minthurazaw.diseasedetector.png"  width="320" height="480" style="width:100%">  
 </div>
  
 </div>
 
 
 
-
-
-
-  ![alt text]()
 
   ![alt text](https://github.com/MinThuraZaw/DiseaseDetector/blob/master/Screenshot_2019-08-22-20-22-58-323_com.example.diseasedetector%5B1%5D.png)
 
